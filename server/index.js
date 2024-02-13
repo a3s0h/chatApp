@@ -9,8 +9,14 @@ const port = 4500;
 const users = {};
 
 app.use(cors(
-  
+  {
+    origin : [""],
+    methods:["POST","GET"],
+    credentials:true
+  }
 ));
+
+
 app.get("/", (req, res) => {
   res.send("HELLO, IT'S WORKING");
 });
