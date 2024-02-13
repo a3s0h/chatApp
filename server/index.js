@@ -1,7 +1,12 @@
 const http = require("http");
 const express = require("express");
 const cors = require("cors");
-const socketIO = require("socket.io");
+const server = http.createServer(app);
+const socketIO = require("socket.io") (http,{
+  cors:{
+      origin:"https://chat-app-xy5k.vercel.app/"
+  }
+});
 
 const app = express();
 const port = 4500;
@@ -21,7 +26,7 @@ app.get("/", (req, res) => {
   res.send("HELLO, IT'S WORKING");
 });
 
-const server = http.createServer(app);
+
 
 const io = socketIO(server);
 
