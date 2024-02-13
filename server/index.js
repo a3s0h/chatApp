@@ -10,7 +10,7 @@ const users = {};
 
 app.use(cors(
   {
-    origin : [""],
+    origin : ["chat-app-xy5k.vercel.app"],
     methods:["POST","GET"],
     credentials:true
   }
