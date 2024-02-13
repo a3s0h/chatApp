@@ -9,7 +9,7 @@ import closeIcon from "../../images/closeIcon.png";
 
 let socket;
 
-const ENDPOINT = "chat-app-pearl-two.vercel.app";
+const ENDPOINT = "https://chat-app-pearl-two.vercel.app/";
 
 const Chat = () => {
     const [id, setid] = useState("");
